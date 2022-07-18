@@ -1,0 +1,9 @@
+//colors
+
+$color-primary: #eee;
+$color-primary-lighten: lighten($color-primary, 10%);
+$color-primary-darken: darken($color-primary, 10%);
+
+//font
+$font-bold-regular: 400;
+$font-bold-weight: 700;

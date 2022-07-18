@@ -1,0 +1,69 @@
+html {
+  font-size: 0.625rem; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  border: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10rem;
+  transition: all 0.2s; }
+  .btn:link:hover,
+  .btn:visited:hover {
+    transform: translateY(-5px); }
+
+.btn:active {
+  transform: translateY(-3px); }
+
+.btn-white {
+  background-color: #fff; }
+
+.btn::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  z-index: -1;
+  transition: all 0.4s; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.1), rgba(213, 213, 213, 0.4)), url("https://images.unsplash.com/photo-1652961989677-a236d38f63f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  .header .logo-div {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 5rem;
+    color: #fff; }
+  .header .header-description {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center; }
+    .header .header-description .header-primary {
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #eee;
+      line-height: 3rem; }
+      .header .header-description .header-primary .header-primary-main {
+        font-size: 3rem; }
+      .header .header-description .header-primary .header-primary-sub {
+        font-size: small;
+        letter-spacing: 1.17rem; }

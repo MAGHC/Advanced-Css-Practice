@@ -1,0 +1,42 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba($color-primary, 0.1), rgba($color-primary-darken, 0.4)),
+    url("https://images.unsplash.com/photo-1652961989677-a236d38f63f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  .logo-div {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 5rem;
+    color: #fff;
+  }
+  .header-description {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+
+    .header-primary {
+      display: flex;
+      flex-direction: column;
+      font-weight: $font-bold-weight;
+      text-transform: uppercase;
+      color: $color-primary;
+      line-height: 3rem;
+
+      .header-primary-main {
+        font-size: 3rem;
+      }
+      .header-primary-sub {
+        font-size: small;
+        letter-spacing: 1.17rem;
+      }
+    }
+  }
+}

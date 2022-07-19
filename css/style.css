@@ -4,6 +4,34 @@ html {
 body {
   font-family: "Roboto", sans-serif; }
 
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  50% {
+    transform: translateX(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  50% {
+    transform: translateX(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBtn {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -12,16 +40,22 @@ body {
   display: inline-block;
   text-decoration: none;
   border-radius: 10rem;
-  transition: all 0.2s; }
-  .btn:link:hover,
-  .btn:visited:hover {
-    transform: translateY(-5px); }
+  transition: all 0.2s;
+  position: relative; }
+
+.btn:hover {
+  transform: translateY(-5px); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
 
 .btn:active {
-  transform: translateY(-3px); }
+  transform: translateY(-10px); }
 
 .btn-white {
   background-color: #fff; }
+  .btn-white::after {
+    background-color: #fff; }
 
 .btn::after {
   position: absolute;
@@ -34,6 +68,10 @@ body {
   border-radius: 10rem;
   z-index: -1;
   transition: all 0.4s; }
+
+.btn-animated {
+  animation: moveInBtn 1.3s ease-in 0.7s;
+  animation-fill-mode: backwards; }
 
 .header {
   height: 95vh;
@@ -63,7 +101,9 @@ body {
       color: #eee;
       line-height: 3rem; }
       .header .header-description .header-primary .header-primary-main {
-        font-size: 3rem; }
+        font-size: 3rem;
+        animation: moveInRight 1.5s ease-out; }
       .header .header-description .header-primary .header-primary-sub {
         font-size: small;
-        letter-spacing: 1.17rem; }
+        letter-spacing: 1.17rem;
+        animation: moveInLeft 1.5s ease-out; }

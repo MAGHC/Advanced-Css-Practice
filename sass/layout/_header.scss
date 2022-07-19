@@ -32,10 +32,12 @@
 
       .header-primary-main {
         font-size: 3rem;
+        animation: moveInRight 1.5s ease-out;
       }
       .header-primary-sub {
         font-size: small;
         letter-spacing: 1.17rem;
+        animation: moveInLeft 1.5s ease-out;
       }
     }
   }

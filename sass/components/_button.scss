@@ -7,17 +7,26 @@
   text-decoration: none;
   border-radius: 10rem;
   transition: all 0.2s;
-  &:hover {
-    transform: translateY(-5px);
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  &::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
   }
 }
 
 .btn:active {
-  transform: translateY(-3px);
+  transform: translateY(-10px);
 }
 
 .btn-white {
   background-color: #fff;
+  &::after {
+    background-color: #fff;
+  }
 }
 
 .btn::after {
@@ -31,4 +40,9 @@
   border-radius: 10rem;
   z-index: -1;
   transition: all 0.4s;
+}
+
+.btn-animated {
+  animation: moveInBtn 1.3s ease-in 0.7s;
+  animation-fill-mode: backwards;
 }

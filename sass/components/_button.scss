@@ -46,3 +46,23 @@
   animation: moveInBtn 1.3s ease-in 0.7s;
   animation-fill-mode: backwards;
 }
+
+.btn-text {
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-size: $font-size-regular;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: $color-thertiary;
+  }
+  &:hover {
+    background-color: black;
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    color: white;
+    transform: translateY(3px);
+  }
+}

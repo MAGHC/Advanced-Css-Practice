@@ -1,0 +1,29 @@
+.composition {
+  position: relative;
+  &__photo {
+    width: 45%;
+    position: absolute;
+    z-index: 5;
+    transition: all 0.2s;
+
+    &--p1 {
+      top: 4rem;
+      left: 0;
+    }
+    &--p2 {
+      top: 0;
+      right: 10rem;
+    }
+    &--p3 {
+      top: 27rem;
+      left: 8rem;
+    }
+
+    &:hover {
+      z-index: 7;
+      outline: 2rem solid $color-secondary-lighten;
+      outline-offset: 1rem;
+      transform: scale(1.05);
+    }
+  }
+}

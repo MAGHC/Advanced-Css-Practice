@@ -5,7 +5,6 @@
   .col-1-2 {
     float: left;
     width: calc((100% - #{$gutter-horizontal}) / 2);
-    background-color: #eee;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
     }

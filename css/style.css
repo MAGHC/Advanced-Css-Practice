@@ -106,13 +106,32 @@ body {
       top: 0;
       right: 10rem; }
     .composition__photo--p3 {
-      top: 27rem;
+      top: 25rem;
       left: 8rem; }
     .composition__photo:hover {
       z-index: 7;
       outline: 2rem solid #606873;
       outline-offset: 1rem;
       transform: scale(1.05); }
+
+.section-features .feature-box {
+  background-color: rgba(238, 238, 238, 0.8);
+  text-align: center;
+  padding: 4rem 2rem;
+  transition: all 0.2s;
+  border-radius: 2rem; }
+  .section-features .feature-box__icon {
+    font-size: 5rem;
+    background: linear-gradient(to right, #eee, #606873);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .section-features .feature-box:hover {
+    transform: scale(1.2); }
+  .section-features .feature-box__text {
+    font-size: 1rem; }
+  .section-features .feature-box .heading-thertiary {
+    font-size: 2.5rem;
+    overflow: hidden; }
 
 .row {
   max-width: 114rem;
@@ -122,9 +141,12 @@ body {
     display: table;
     clear: both; }
   .row .col-1-2 {
-    float: left;
     width: calc((100% - 6rem) / 2); }
-    .row .col-1-2:not(:last-child) {
+  .row .col-1-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
 
 .header {
@@ -180,3 +202,13 @@ body {
     font-size: 2.5rem; }
   .section-about .lorem {
     font-size: 1.6rem; }
+
+.section-features {
+  padding: 15rem 1rem;
+  background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.1), rgba(213, 213, 213, 0.4)), url("https://images.unsplash.com/photo-1652961989677-a236d38f63f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -4rem;
+  transform: skewY(-5deg); }
+  .section-features > * {
+    transform: skewY(5deg); }

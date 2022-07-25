@@ -133,6 +133,33 @@ body {
     font-size: 2.5rem;
     overflow: hidden; }
 
+.card {
+  position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card .card__side {
+    height: 52rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    transition: all 0.8s ease; }
+    .card .card__side--front {
+      background-color: rgba(49, 44, 44, 0.15); }
+    .card .card__side--back {
+      transform: rotateY(180deg); }
+      .card .card__side--back-1 {
+        background-color: rgba(66, 165, 245, 0.15); }
+      .card .card__side--back-2 {
+        background-color: rgba(66, 165, 245, 0.15); }
+      .card .card__side--back-3 {
+        background-color: rgba(66, 165, 245, 0.15); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -144,6 +171,8 @@ body {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-4 {
     width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-1-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
@@ -184,10 +213,12 @@ body {
         letter-spacing: 1.17rem;
         animation: moveInLeft 1.5s ease-out; }
 
-.section-about {
+.section-about,
+.section-third {
   margin-top: -26vh;
   padding: 25rem 0; }
-  .section-about .heading-secondary {
+  .section-about .heading-secondary,
+  .section-third .heading-secondary {
     display: inline-block;
     text-transform: uppercase;
     font-size: 3.5rem;
@@ -195,12 +226,15 @@ body {
     color: transparent;
     -webkit-background-clip: text;
     transition: all 0.2s; }
-    .section-about .heading-secondary:hover {
+    .section-about .heading-secondary:hover,
+    .section-third .heading-secondary:hover {
       transform: skewY(2deg) scale(1.5); }
-  .section-about .heading-thertiary {
+  .section-about .heading-thertiary,
+  .section-third .heading-thertiary {
     text-transform: uppercase;
     font-size: 2.5rem; }
-  .section-about .lorem {
+  .section-about .lorem,
+  .section-third .lorem {
     font-size: 1.6rem; }
 
 .section-features {
@@ -212,3 +246,7 @@ body {
   transform: skewY(-5deg); }
   .section-features > * {
     transform: skewY(5deg); }
+
+.section-third {
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem; }

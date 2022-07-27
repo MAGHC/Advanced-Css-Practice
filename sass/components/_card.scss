@@ -10,6 +10,7 @@
     top: 0;
     left: 0;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     transition: all 0.8s ease;
 
     &--front {
@@ -80,5 +81,21 @@
 
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+  &__flex {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__box {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__price--only {
+    font-size: 1.5rem;
+  }
+  &__price--value {
+    font-size: 4rem;
   }
 }

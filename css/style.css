@@ -36,6 +36,9 @@ body {
 .u-text-align-center {
   text-align: center; }
 
+.u-margin-bottom-big {
+  margin-bottom: 10rem; }
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -144,6 +147,7 @@ body {
     top: 0;
     left: 0;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     transition: all 0.8s ease; }
     .card .card__side--front {
       background-color: rgba(49, 44, 44, 0.15); }
@@ -192,6 +196,17 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card__flex {
+    height: 100%;
+    display: flex;
+    align-items: center; }
+  .card__box {
+    margin: 0 auto;
+    text-align: center; }
+  .card__price--only {
+    font-size: 1.5rem; }
+  .card__price--value {
+    font-size: 4rem; }
 
 .row {
   max-width: 114rem;

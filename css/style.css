@@ -39,6 +39,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 10rem; }
 
+.u-margin-top-big {
+  margin-top: 10rem; }
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -208,6 +211,48 @@ body {
   .card__price--value {
     font-size: 4rem; }
 
+.image {
+  width: 100%;
+  height: 20rem;
+  background-color: white;
+  transform: skewX(-4deg);
+  padding: 3rem 0;
+  text-align: start;
+  box-shadow: 0 4rem 3rem rgba(0, 0, 0, 0.3); }
+  .image > * {
+    transform: skewX(4deg); }
+  .image__shape {
+    float: left;
+    width: 15rem;
+    height: 15rem;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    position: relative;
+    overflow: hidden; }
+  .image__image {
+    width: 100%;
+    transition: all 0.2s; }
+  .image__figcap {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-size: 2rem;
+    color: white;
+    transition: all 0.2s;
+    opacity: 0; }
+  .image__textContent {
+    font-size: 1.6rem;
+    font-weight: 400; }
+  .image:hover .image__figcap {
+    opacity: 1;
+    top: 40%;
+    left: 20%; }
+  .image:hover .image__image {
+    transform: scale(1.4);
+    filter: blur(3px); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -261,40 +306,52 @@ body {
         letter-spacing: 1.17rem;
         animation: moveInLeft 1.5s ease-out; }
 
-.section-about,
-.section-third {
-  margin-top: -26vh;
-  padding: 25rem 0; }
-  .section-about .heading-secondary,
-  .section-third .heading-secondary {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 3.5rem;
-    background: linear-gradient(to right, #3d4249, #606873);
-    color: transparent;
-    -webkit-background-clip: text;
-    transition: all 0.2s; }
-    .section-about .heading-secondary:hover,
-    .section-third .heading-secondary:hover {
-      transform: skewY(2deg) scale(1.5); }
-  .section-about .heading-thertiary,
-  .section-third .heading-thertiary {
-    text-transform: uppercase;
-    font-size: 2.5rem; }
-  .section-about .lorem,
-  .section-third .lorem {
-    font-size: 1.6rem; }
-
-.section-features {
-  padding: 15rem 1rem;
-  background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.1), rgba(213, 213, 213, 0.4)), url("https://images.unsplash.com/photo-1652961989677-a236d38f63f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: -4rem;
-  transform: skewY(-5deg); }
-  .section-features > * {
-    transform: skewY(5deg); }
-
-.section-third {
-  padding: 25rem 0 50rem 0;
-  margin-top: -10rem; }
+body {
+  background-color: #f7f7f7; }
+  body .section-about,
+  body .section-third {
+    margin-top: -26vh;
+    padding: 25rem 0; }
+    body .section-about .heading-secondary,
+    body .section-third .heading-secondary {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 3.5rem;
+      background: linear-gradient(to right, #3d4249, #606873);
+      color: transparent;
+      -webkit-background-clip: text;
+      transition: all 0.2s; }
+      body .section-about .heading-secondary:hover,
+      body .section-third .heading-secondary:hover {
+        transform: skewY(2deg) scale(1.5); }
+    body .section-about .heading-thertiary,
+    body .section-third .heading-thertiary {
+      text-transform: uppercase;
+      font-size: 2.5rem; }
+    body .section-about .lorem,
+    body .section-third .lorem {
+      font-size: 1.6rem; }
+  body .section-features {
+    padding: 15rem 1rem;
+    background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.1), rgba(213, 213, 213, 0.4)), url("https://images.unsplash.com/photo-1652961989677-a236d38f63f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -4rem;
+    transform: skewY(-5deg); }
+    body .section-features > * {
+      transform: skewY(5deg); }
+  body .section-third {
+    padding: 25rem 0 50rem 0;
+    margin-top: -10rem; }
+  body .section-video {
+    padding: 15rem 0; }
+    body .section-video .heading-secondary {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 3.5rem;
+      background: linear-gradient(to right, #3d4249, #606873);
+      color: transparent;
+      -webkit-background-clip: text;
+      transition: all 0.2s; }
+      body .section-video .heading-secondary:hover {
+        transform: skewY(2deg) scale(1.5); }

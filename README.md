@@ -8,7 +8,7 @@ css 기술을 연마 및 적용해본 연습 페이지 중 1 나중에 다 만�
 https://maghc.github.io/Advanced-Css-Practice/
 
 
-##사용한 방법론 / 기술 
+## 사용한 방법론 / 기술 
 
 <h2>7-1 아키텍쳐 트리 적용</h2>
 

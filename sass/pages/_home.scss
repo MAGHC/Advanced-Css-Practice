@@ -75,4 +75,19 @@ body {
       }
     }
   }
+  .section-login {
+    .heading-secondary {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: $font-size-big;
+      background: linear-gradient(to right, $color-secondary, $color-secondary-lighten);
+      color: transparent;
+      -webkit-background-clip: text;
+
+      transition: all 0.2s;
+      &:hover {
+        transform: skewY(2deg) scale(1.5);
+      }
+    }
+  }
 }

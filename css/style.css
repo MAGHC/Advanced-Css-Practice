@@ -253,6 +253,15 @@ body {
     transform: scale(1.4);
     filter: blur(3px); }
 
+.login {
+  height: 40rem;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(https://images.unsplash.com/photo-1659359269147-389d4109817c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80); }
+  .login__form {
+    margin: 0 auto;
+    width: 60%;
+    height: 6rem;
+    background-size: cover; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -366,3 +375,13 @@ body {
       transition: all 0.2s; }
       body .section-video .heading-secondary:hover {
         transform: skewY(2deg) scale(1.5); }
+  body .section-login .heading-secondary {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    background: linear-gradient(to right, #3d4249, #606873);
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: all 0.2s; }
+    body .section-login .heading-secondary:hover {
+      transform: skewY(2deg) scale(1.5); }

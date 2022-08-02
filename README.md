@@ -69,3 +69,22 @@ image // z-index / scale / outside
 <br>
 <br>
 
+
+### Video / image section 
+
+![이미지 001](https://user-images.githubusercontent.com/89845540/182136055-8fda36ea-d887-4b03-b7ff-af1429cdb429.gif)
+
+blur()/ semantic figure, figurecaption tag 활용/ shape  
+
+<br>
+<br>
+
+![이미지 003](https://user-images.githubusercontent.com/89845540/182136064-010e69d9-0b1b-46f1-bb04-447555b34322.gif)
+
+
+video background 
+
+<br>
+<br>
+
+

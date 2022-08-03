@@ -42,6 +42,9 @@ body {
 .u-margin-top-big {
   margin-top: 10rem; }
 
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -254,13 +257,28 @@ body {
     filter: blur(3px); }
 
 .login {
+  display: flex;
+  align-items: center;
   height: 40rem;
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(https://images.unsplash.com/photo-1659359269147-389d4109817c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80); }
-  .login__form {
+  .login .form {
     margin: 0 auto;
-    width: 60%;
-    height: 6rem;
-    background-size: cover; }
+    width: 60%; }
+  .login__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid transparent;
+    border: none;
+    transition: all 0.2s;
+    color: inherit; }
+    .login__input:focus {
+      outline: none;
+      border-bottom: 3px solid green; }
+      .login__input:focus:invalid {
+        border-bottom: 3px solid red; }
 
 .row {
   max-width: 114rem;

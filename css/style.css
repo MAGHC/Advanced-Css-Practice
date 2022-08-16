@@ -357,6 +357,7 @@ body {
   z-index: 1000; }
 
 .navigation__nav {
+  display: none;
   background-color: #3d4249;
   position: fixed;
   top: 0;

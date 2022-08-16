@@ -23,6 +23,7 @@
     z-index: 1000;
   }
   &__nav {
+    display: none; // 다른 작업물 가려서 임시로 가려둠
     background-color: $color-secondary;
     position: fixed;
     top: 0;

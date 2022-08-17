@@ -10,7 +10,7 @@
     top: 6rem;
     right: 6rem;
     border-radius: 50%;
-    z-index: 3000;
+    z-index: 4000;
   }
   &__background {
     width: 6rem;
@@ -21,16 +21,17 @@
     right: 6.5rem;
     background-image: radial-gradient($color-secondary, $color-thertiary);
     z-index: 1000;
+    transition: all 0.8s cubic-bezier(0.4, -0.76, 0.69, 1.75);
   }
   &__nav {
-    display: none; // 다른 작업물 가려서 임시로 가려둠
-    background-color: $color-secondary;
+    opacity: 0;
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
-    width: 100%;
-    z-index: 2200;
+    width: 0;
+    z-index: 3000;
+    transition: all 0.8s;
   }
   &__ul {
     position: absolute;
@@ -60,5 +61,12 @@
       background-position: 100%;
       color: $color-thertiary;
     }
+  }
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+  &__checkbox:checked ~ &__nav {
+    width: 100%;
+    opacity: 1;
   }
 }

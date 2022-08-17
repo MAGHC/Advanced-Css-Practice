@@ -344,7 +344,7 @@ body {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 3000; }
+  z-index: 4000; }
 
 .navigation__background {
   width: 6rem;
@@ -354,17 +354,18 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#3d4249, #42a5f5);
-  z-index: 1000; }
+  z-index: 1000;
+  transition: all 0.8s cubic-bezier(0.4, -0.76, 0.69, 1.75); }
 
 .navigation__nav {
-  display: none;
-  background-color: #3d4249;
+  opacity: 0;
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
-  width: 100%;
-  z-index: 2200; }
+  width: 0;
+  z-index: 3000;
+  transition: all 0.8s; }
 
 .navigation__ul {
   position: absolute;
@@ -388,6 +389,13 @@ body {
 .navigation__a:hover, .navigation__a:active {
   background-position: 100%;
   color: #42a5f5; }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  width: 100%;
+  opacity: 1; }
 
 body {
   background-color: #f7f7f7; }

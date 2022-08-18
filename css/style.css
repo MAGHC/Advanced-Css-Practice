@@ -337,7 +337,7 @@ body {
   display: none; }
 
 .navigation__label {
-  background-color: white;
+  background-color: lightgray;
   height: 7rem;
   width: 7rem;
   position: fixed;
@@ -396,6 +396,36 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 100%;
   opacity: 1; }
+
+.navigation__icon {
+  margin-top: 3.5rem;
+  margin-left: 2rem;
+  position: relative; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    display: inline-block;
+    background-color: black; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s; }
+  .navigation__icon::before {
+    top: -1rem; }
+  .navigation__icon::after {
+    top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__label .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__label .navigation__icon::before {
+  top: 0;
+  transform: rotate(45deg); }
+
+.navigation__checkbox:checked + .navigation__label .navigation__icon::after {
+  top: 0;
+  transform: rotate(-45deg); }
 
 body {
   background-color: #f7f7f7; }

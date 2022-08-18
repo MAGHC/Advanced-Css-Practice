@@ -2,7 +2,9 @@
 
 
 
-css 기술을 연마 및 적용해본 연습 페이지 중 1 나중에 다 만들고 나서 이름 변경 될 수 있음 
+css 기술을 연마 및 적용해본 연습 페이지
+
+desgin by Jonas
 
 *배포 페이지 =><br>
 https://maghc.github.io/Advanced-Css-Practice/

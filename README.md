@@ -96,3 +96,59 @@ video background
 focus/invalid 
 <br>
 <br>
+
+
+### Nav
+
+
+navButton 
+
+rotate 
+
+
+
+![이미지 002](https://user-images.githubusercontent.com/89845540/185304296-5e65fd9e-aa35-4470-8711-c56f65d4cc1e.gif)
+
+<br>
+<br>
+
+nav background 
+
+animation timing  :   cubic-besire
+
+
+
+![이미지 005](https://user-images.githubusercontent.com/89845540/185304552-17406113-87bd-4dfe-87db-82d3db410aee.gif)
+<br>
+<br>
+
+nav menu 
+
+width 0 ~ 100 
+
+![이미지 006](https://user-images.githubusercontent.com/89845540/185304607-b86816e6-37f1-42ef-b57f-a5d6a5713d4b.gif)
+
+<br>
+<br>
+
+
+nav menu hover 
+
+linear gradiant&
+backgrodun size &
+background position 
+
+![이미지 007](https://user-images.githubusercontent.com/89845540/185304663-82e50a75-1dce-4fbd-8bb1-944ba546c3cd.gif)
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+

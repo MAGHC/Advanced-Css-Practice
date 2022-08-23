@@ -122,7 +122,7 @@
           </div>
         </div>
       </div>
-      <section class="section-third">
+      <section class="section-third" id="section-third">
         <div class="u-text-align-center">
           <h2 class="heading-secondary">tertiary-section</h2>
         </div>
@@ -148,7 +148,7 @@
                   <div class="card__box">
                     <p class="card__price--only">only</p>
                     <p class="card__price--value">300$</p>
-                    <a href="#" class="btn btn-white">now!!!</a>
+                    <a href="#modal" class="btn btn-white">now!!!</a>
                   </div>
                 </div>
               </div>
@@ -175,7 +175,7 @@
                   <div class="card__box">
                     <p class="card__price--only">only</p>
                     <p class="card__price--value">300$</p>
-                    <a href="#" class="btn btn-white">now!!!</a>
+                    <a href="#modal" class="btn btn-white">now!!!</a>
                   </div>
                 </div>
               </div>
@@ -202,7 +202,7 @@
                   <div class="card__box">
                     <p class="card__price--only">only</p>
                     <p class="card__price--value">300$</p>
-                    <a href="#" class="btn btn-white">now!!!</a>
+                    <a href="#modal" class="btn btn-white">now!!!</a>
                   </div>
                 </div>
               </div>
@@ -268,14 +268,15 @@
       </section>
     </main>
 
-    <div class="modal">
+    <div class="modal" id="modal">
       <div class="modal__content">
         <div class="modal__left">
-          <img src="./img/1.webp" />
-          <img src="./img/2.webp" />
+          <img class="modal__img" src="./img/1.webp" />
+          <img class="modal__img" src="./img/2.webp" />
         </div>
         <div class="modal__right">
-          <h2 class="heading-secondary">login-section</h2>
+          <a href="#section-third" class="modal__close">X</a>
+          <h2 class="modal__head">modal-section</h2>
           <p class="modal__text">
             "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the
             moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in

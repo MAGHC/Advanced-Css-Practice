@@ -143,6 +143,24 @@ background position
 <br>
 <br>
 
+modal 
+
+
+
+https://user-images.githubusercontent.com/89845540/186087002-9880472f-9f0f-425c-a6db-e821d426aed9.mp4
+
+
+column-count / rule  속성 활용 
+
+display -table / table-cell 로 layout 
+
+
+
+
+
+
+<br>
+<br>
 
 
 
